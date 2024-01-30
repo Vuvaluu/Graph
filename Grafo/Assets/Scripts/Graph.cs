@@ -6,7 +6,7 @@ public class Graph : MonoBehaviour
 {
    List<Edge> edges;
    [SerializeField] List<Node> nodes;
-   
+    public List<GameObject> points;
   void Start()
   {
      edges = new List<Edge>();
@@ -48,3 +48,48 @@ public class Graph : MonoBehaviour
   }
 
 }
+
+/* if(node == 0)
+  {
+    AstarFound = true;
+* }
+    if(edge.GetTo().GetCaminoRecorrido() == -1)
+{
+    edge.GetTo().SetCaminoRecorrido(edge.GetDistance() + node.GetCaminoRecorrido());
+    edge.GetTo().SetCost(cost);
+    edge.GetTO().SetCorrectEdge(edge);
+}
+else if(edge.GetTo().GetCaminoRecorrido() > node.GetCaminoRecorrido() + edge.GetDistance())
+{
+    edge.GetTo().SetCaminoRecorrido(edge.GetDistance() + node.GetCaminoRecorrido));
+    edge.GetTo().SetCost(cost);
+    edge.GetTO().SetCorrectEdge(edge);
+}
+ */
+
+/* Agregar variable: private bool AstarFound = false;
+   Agregar una lista: List<Node>
+   Agregar otra lista: List<Node> shortest = new List
+ public void AStar(){
+    Analizar(InitialNode);
+    while(!AstarFound)
+    {
+        Analizar(porAnalizar[0]);
+    }
+ }
+
+    public void SortList()
+{
+    porAnalizar.Sort(delegate(Node c1, Node c2) {return c1.GetCost().CompareTo(c2.GetCost()); });
+}
+
+    public void ShortesPath(){
+        Node temp;
+        while(temp != InitialNode)
+        {
+            ShortestPath.Add(temp);
+            temp = temp.GetCorrectEdge().GetFrom();
+        }
+}
+    
+ */
